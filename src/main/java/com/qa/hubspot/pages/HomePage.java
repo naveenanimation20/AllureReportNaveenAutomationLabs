@@ -17,7 +17,7 @@ public class HomePage extends BasePage{
 	@FindBy(className = "private-page__title")
 	WebElement homePageHeader;
 	
-	@FindBy(id = "nav-primary-contacts-branch212121")
+	@FindBy(id = "nav-primary-contacts-branch")
 	WebElement contactsTab;
 	
 	@FindBy(id = "nav-secondary-contacts")
