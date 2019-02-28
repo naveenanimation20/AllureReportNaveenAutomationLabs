@@ -1,0 +1,6 @@
+com/qa/hubspot/Base/BasePage.class
+con/qa/hubspot/util/TestUtil.class
+com/qa/hubspot/pages/HomePage.class
+com/qa/hubspot/pages/LoginPage.class
+com/qa/hubspot/constants/Constants.class
+com/qa/hubspot/pages/ContactsPage.class
