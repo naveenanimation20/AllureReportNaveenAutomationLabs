@@ -5,4 +5,5 @@ com/qa/hubspot/listeners/ExtentReportListener.class
 com/qa/hubspot/Base/BasePage.class
 com/qa/hubspot/pages/HomePage.class
 com/qa/hubspot/constants/Constants.class
+com/qa/hubspot/listeners/TestAllureListener.class
 com/qa/hubspot/pages/ContactsPage.class

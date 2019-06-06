@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="64.717" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="84.449" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
@@ -64,7 +64,30 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyLoginPageTitleTest" classname="com.qa.hubspot.tests.LoginTest" time="10.251"/>
-  <testcase name="verifySignUpLinkTest" classname="com.qa.hubspot.tests.LoginTest" time="7.443"/>
-  <testcase name="loginCorrectCredentialsTest" classname="com.qa.hubspot.tests.LoginTest" time="7.33"/>
+  <testcase name="verifyLoginPageTitleTest" classname="com.qa.hubspot.tests.LoginTest" time="12.527">
+    <failure message="expected [HubSpot Login123] but found [HubSpot Login]" type="java.lang.AssertionError">java.lang.AssertionError: expected [HubSpot Login123] but found [HubSpot Login]
+	at com.qa.hubspot.tests.LoginTest.verifyLoginPageTitleTest(LoginTest.java:60)
+</failure>
+    <system-out><![CDATA[I am in onStart method hub spot regression Test
+Test Suite started!
+I am in onStart method hub spot regression Test
+I am in onTestStart method verifyLoginPageTitleTest start
+verifyLoginPageTitleTest started!
+I am in onTestStart method verifyLoginPageTitleTest start
+the login page title is: HubSpot Login
+I am in onTestFailure method verifyLoginPageTitleTest failed
+Screenshot captured for test case:verifyLoginPageTitleTest
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e) on port 13622
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jun 06, 2019 10:05:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="verifySignUpLinkTest" classname="com.qa.hubspot.tests.LoginTest" time="7.539"/>
+  <testcase name="loginCorrectCredentialsTest" classname="com.qa.hubspot.tests.LoginTest" time="9.893"/>
 </testsuite>

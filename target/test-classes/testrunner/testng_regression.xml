@@ -2,17 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Hub Spot App Regression Test" verbose="1" parallel="methods" thread-count="3">
+<suite name="Hub Spot App Regression Test" verbose="1" parallel="methods"
+	thread-count="3">
 
 	<listeners>
 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
+		<listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
+
 	</listeners>
 
 	<test name="hub spot regression Test">
 		<classes>
 			<class name="com.qa.hubspot.tests.LoginTest" />
-<!-- 			<class name="com.qa.hubspot.tests.HomePageTest" />
- --><!-- 			<class name="com.qa.hubspot.tests.ContactsPageTest" />
- -->		</classes>
+			<!-- <class name="com.qa.hubspot.tests.HomePageTest" /> --><!-- <class name="com.qa.hubspot.tests.ContactsPageTest" /> -->
+		</classes>
 	</test>
 </suite>

@@ -1,45 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub Spot App Regression Test" duration-ms="48506" started-at="2019-06-06T11:15:08Z" finished-at="2019-06-06T11:15:56Z">
+  <suite name="Hub Spot App Regression Test" duration-ms="65828" started-at="2019-06-06T16:35:00Z" finished-at="2019-06-06T16:36:06Z">
     <groups>
     </groups>
-    <test name="hub spot regression Test" duration-ms="48506" started-at="2019-06-06T11:15:08Z" finished-at="2019-06-06T11:15:56Z">
+    <test name="hub spot regression Test" duration-ms="65828" started-at="2019-06-06T16:35:00Z" finished-at="2019-06-06T16:36:06Z">
       <class name="com.qa.hubspot.tests.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="setUp" is-config="true" duration-ms="12250" started-at="2019-06-06T11:15:08Z" finished-at="2019-06-06T11:15:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="setUp" is-config="true" duration-ms="14642" started-at="2019-06-06T16:35:00Z" finished-at="2019-06-06T16:35:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="verifyLoginPageTitleTest" duration-ms="10251" started-at="2019-06-06T11:15:21Z" description="verifying login page title test" finished-at="2019-06-06T11:15:31Z">
+        <test-method status="FAIL" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="verifyLoginPageTitleTest" duration-ms="10494" started-at="2019-06-06T16:35:16Z" description="verifying login page title test" finished-at="2019-06-06T16:35:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [HubSpot Login123] but found [HubSpot Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [HubSpot Login123] but found [HubSpot Login]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.hubspot.tests.LoginTest.verifyLoginPageTitleTest(LoginTest.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="tearDown" is-config="true" duration-ms="159" started-at="2019-06-06T11:15:31Z" finished-at="2019-06-06T11:15:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="tearDown" is-config="true" duration-ms="416" started-at="2019-06-06T16:35:32Z" finished-at="2019-06-06T16:35:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="setUp" is-config="true" duration-ms="5173" started-at="2019-06-06T11:15:31Z" finished-at="2019-06-06T11:15:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="setUp" is-config="true" duration-ms="7048" started-at="2019-06-06T16:35:32Z" finished-at="2019-06-06T16:35:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="verifySignUpLinkTest" duration-ms="7442" started-at="2019-06-06T11:15:36Z" description="verifying sign up link test" finished-at="2019-06-06T11:15:44Z">
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="verifySignUpLinkTest" duration-ms="7539" started-at="2019-06-06T16:35:39Z" description="verifying sign up link test" finished-at="2019-06-06T16:35:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="tearDown" is-config="true" duration-ms="197" started-at="2019-06-06T11:15:44Z" finished-at="2019-06-06T11:15:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="tearDown" is-config="true" duration-ms="400" started-at="2019-06-06T16:35:47Z" finished-at="2019-06-06T16:35:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="setUp" is-config="true" duration-ms="4649" started-at="2019-06-06T11:15:44Z" finished-at="2019-06-06T11:15:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="setUp" is-config="true" duration-ms="8857" started-at="2019-06-06T16:35:47Z" finished-at="2019-06-06T16:35:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginCorrectCredentialsTest()[pri:3, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="loginCorrectCredentialsTest" duration-ms="7330" started-at="2019-06-06T11:15:49Z" description="login into app test" finished-at="2019-06-06T11:15:56Z">
+        <test-method status="PASS" signature="loginCorrectCredentialsTest()[pri:3, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="loginCorrectCredentialsTest" duration-ms="9894" started-at="2019-06-06T16:35:56Z" description="login into app test" finished-at="2019-06-06T16:36:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCorrectCredentialsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@7cd1ac19]" name="tearDown" is-config="true" duration-ms="291" started-at="2019-06-06T11:15:56Z" finished-at="2019-06-06T11:15:56Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@30272916]" name="tearDown" is-config="true" duration-ms="295" started-at="2019-06-06T16:36:06Z" finished-at="2019-06-06T16:36:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

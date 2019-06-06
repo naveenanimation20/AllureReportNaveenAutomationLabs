@@ -1,3 +1,0 @@
-# Created on 2019-06-06T16:45:00.292
-objc[81805]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/bin/java (0x10966e4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1097234e0). One of the two will be used. Which one is undefined.
-
