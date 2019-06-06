@@ -11,6 +11,14 @@ import org.testng.ITestResult;
 
 import com.qa.hubspot.Base.BasePage;
 
+
+/**
+ * 
+ * @author NaveenKhunteta
+ *
+ */
+
+
 public class TestAllureListener implements ITestListener {
 
 	private static String getTestMethodName(ITestResult iTestResult) {
