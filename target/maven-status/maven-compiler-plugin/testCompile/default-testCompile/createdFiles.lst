@@ -1,3 +1,9 @@
+com/qa/hubspot/tests/TestRunner.class
+com/qa/hubspot/tests/PriorityConcept.class
+com/qa/hubspot/tests/DependsOnMethodConcept.class
 com/qa/hubspot/tests/ContactsPageTest.class
+com/qa/hubspot/tests/InvocationCount.class
+com/qa/hubspot/tests/TestNGAnnotations.class
+com/qa/hubspot/tests/ExpectedExceptionConcept.class
 com/qa/hubspot/tests/LoginTest.class
 com/qa/hubspot/tests/HomePageTest.class

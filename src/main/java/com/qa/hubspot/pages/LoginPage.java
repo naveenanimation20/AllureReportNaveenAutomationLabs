@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.hubspot.Base.BasePage;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends BasePage{
 	
 	//1.a: define page objects (PAGE OR) : using PageFactory Pattern
@@ -30,15 +32,17 @@ public class LoginPage extends BasePage{
 	}
 	
 	//2. Page methods - Actions:
-	
+	@Step("getting login page title step....")
 	public String getLoginPageTitle(){
 		return driver.getTitle();
 	}
 	
+	@Step("verifying sign up link is displayed step....")
 	public boolean VerifySignUpLink(){
 		return signUpLink.isDisplayed();
 	}
 	
+	@Step("login with username: {0} and password: {1} step...")
 	public HomePage login(String un, String pwd){
 		emailId.sendKeys(un);
 		password.sendKeys(pwd);
